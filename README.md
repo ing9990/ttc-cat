@@ -1,44 +1,28 @@
-# Springboot
+# Springboot Example
+
 ```java
-
-@Configuration
-class TtcConfig {
-    @Bean
-    public TtcCat ttcCat() {
-        return new TtcCatImpl(ExchangeType.LBANK);
-        // return new TtcCatImpl(ExchangeType.MEXC);
-    }
-}
-
 @RestController
-@RequestMapping("/api/v1")
 public class ExampleApi {
+    
+    @Autowired
+    private TtcCat ttcCat;
 
-    private final TtcCat ttcCat;
-
-    public ExampleApi(TtcCat ttcCat) {
-        this.ttcCat = ttcCat;
-    }
-
-    @GetMapping("/price")
+    @GetMapping
     String price() {
-        // 0.07396 [USDT]
-        return ttcCat.get().getTicker().getLatest();
+        return ttcCat.get().getTicker().getLatest();  // 0.07396 [USDT]
     }
 }
 
 ```
 
-# Java
+# Java Example
 
 ```java
 public class TtcPrinter {
     private static TtcCat MEXC = new TtcCatImpl(ExchangeType.MEXC);
 
     public static void main(String[] args) {
-        
-        // 0.7955
-        String mexcTtcPrice = MEXC.get().getTicker().getLatest();
+        String mexcTtcPrice = MEXC.get().getTicker().getLatest(); // 0.7955
     }
 }
 
