@@ -1,0 +1,6 @@
+rootProject.name = 'ttc-cat'
+
+include ':ttc-cat-core'
+include 'example-app'
+include 'example-server'
+

@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.ing9990'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.github.openfeign', name: 'feign-core', version: '13.1'
+    implementation group: 'io.github.openfeign', name: 'feign-gson', version: '9.4.0'
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

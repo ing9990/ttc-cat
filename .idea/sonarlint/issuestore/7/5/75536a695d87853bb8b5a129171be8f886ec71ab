@@ -1,0 +1,9 @@
+
+r
+java:S3008"PRename this field "LBANK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïøÎ¯ùÿÿÿÿ8°–º†Ò1
+q
+java:S3008"ORename this field "MEXC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý¦¯¬üÿÿÿÿ8±–º†Ò1
+N
+java:S1481"2Remove this unused "lbankTtcPrice" local variable.(À—Ïf8¤Ü·†Ò1
+S
+java:S1481"1Remove this unused "mexcTtcPrice" local variable.(ÀÊ®úÿÿÿÿÿ8¦Ü·†Ò1
