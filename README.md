@@ -1,3 +1,8 @@
+[MEXC - TTC_USDT](https://www.mexc.com/ko-KR/exchange/TTC_USDT?_from=search) 
+
+[LBank - TTC USDT](https://www.lbank.com/trade/ttc_usdt/)
+
+
 # Springboot Example
 
 ```java
@@ -27,3 +32,4 @@ public class TtcPrinter {
 }
 
 ```
+
